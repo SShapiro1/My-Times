@@ -51,6 +51,7 @@ body {
 
 div {
   border: 1px solid black;
+  display: block;
 
 }
 .column.large {
@@ -59,6 +60,44 @@ div {
 
 p {
   display: block;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+image {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.lead-story .image-content {
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-main.png);
+  width: 630px;
+  height: 300px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.image-content {
+  color: white;
+  font-size: 30px;
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fall-cancelled.image-content {
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-2.png);
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .column {
@@ -67,8 +106,32 @@ p {
   margin-right: 32px;
 }
 
+.pop-culture.image-content {
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-3.png);
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+<!-- Second News Column -->
+
 .column.medium {
   width: 300px;
+}
+
+.cat-ceo.image-content {
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-1.png);
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .column.small {
