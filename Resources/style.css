@@ -9,6 +9,7 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  background-color: white;
 }
 
 .logo {
@@ -39,7 +40,7 @@ nav span {
 }
 
 body {
-  margin: 0;
+  margin: auto;
 }
 
 .content {
@@ -49,13 +50,27 @@ body {
   padding-top: 116px;
 }
 
-div {
-  border: 1px solid black;
-  display: block;
 
-}
+<!-- First News Column -->
+
 .column.large {
   width: 630px;
+  display: flex;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  padding: 15px
+}
+
+h2 {
+  display: block;
 }
 
 p {
@@ -63,6 +78,8 @@ p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+  display: flex;
+  align-items: center;
 }
 
 image {
@@ -70,6 +87,9 @@ image {
   font-weight: bold;
   font-size: 30px;
   color: white;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .lead-story .image-content {
@@ -79,6 +99,7 @@ image {
   margin-top: 0;
   font-size: 40px;
   text-align: left;
+  display: flex;
 }
 
 .image-content {
@@ -87,6 +108,7 @@ image {
   font-family: Georgia;
   font-weight: bold;
   text-align: center;
+  display: flex;
 }
 
 .fall-cancelled.image-content {
@@ -98,6 +120,7 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
+  display: block;
 }
 
 .column {
@@ -115,12 +138,14 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
+  display: block;
 }
 
 <!-- Second News Column -->
 
 .column.medium {
   width: 300px;
+  display: flex;
 }
 
 .cat-ceo.image-content {
@@ -132,8 +157,63 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
+  display: flex;
 }
+
+<!-- Third Column -->
 
 .column.small {
   width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsbites {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bite {
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: block;
+  background-color: WhiteSmoke;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
+}
+
+<!-- Footer -->
+
+.footer {
+  display: inline-block;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: MediumAquamarine;
+  width: 100%;
+  height: 325px;
+}
+
+div .info {
+  display: block;
+}
+
+.footer .title {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid White;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer .nav {
+  display: inline-block;
+  padding-left: 25px;
 }
