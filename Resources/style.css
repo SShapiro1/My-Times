@@ -12,6 +12,7 @@ header {
   background-color: white;
 }
 
+
 .logo {
   display: flex;
   align-items: center;
@@ -31,7 +32,6 @@ header {
 
 header nav {
   padding-right: 40px;
-  display: block;
 }
 
 nav span {
@@ -51,30 +51,46 @@ body {
 }
 
 
-<!-- First News Column -->
+/* First Column */
 
 .column.large {
   width: 630px;
   display: flex;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
 .stories {
   display: flex;
   justify-content: space-between;
+  margin-top: 17px;
 }
 
 .story {
   display: flex;
   flex-direction: column;
-  padding: 15px
+  width: 300px;
+}
+
+.stories .text-content {
+  height: 250px;
 }
 
 h2 {
   display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 p {
-  display: block;
   font-family: Georgia;
   font-size: 17px;
   color: black;
@@ -120,7 +136,6 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
-  display: block;
 }
 
 .column {
@@ -138,14 +153,12 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
-  display: block;
 }
 
-<!-- Second News Column -->
+/* Second Column */
 
 .column.medium {
   width: 300px;
-  display: flex;
 }
 
 .cat-ceo.image-content {
@@ -160,7 +173,7 @@ image {
   display: flex;
 }
 
-<!-- Third Column -->
+/* third column */
 
 .column.small {
   width: 240px;
@@ -184,26 +197,22 @@ image {
   padding: 11px 20px;
 }
 
-<!-- Footer -->
+/* Footer */
 
-.footer {
-  display: inline-block;
-  margin: auto;
-  font-family: Verdana;
-  font-size: 12px;
+footer {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: MediumAquamarine;
   width: 100%;
   height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
 }
 
-div .info {
-  display: block;
-}
-
-.footer .title {
+footer .title {
   display: inline-block;
   padding-right: 25px;
   border-right: 2px solid White;
@@ -213,7 +222,7 @@ div .info {
   color: white;
 }
 
-.footer .nav {
+footer nav {
   display: inline-block;
   padding-left: 25px;
 }
