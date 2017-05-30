@@ -1,3 +1,13 @@
+/*nav {
+  border: 1px solid green;
+}
+
+div {
+  border: 1px solid green;
+}*/
+
+/*header starts*/
+
 header {
   display: flex;
   align-items: center;
@@ -27,17 +37,29 @@ header {
 }
 
 .logo span {
-  color: MediumAquamarine;
+  color: #A6B7D1;
 }
 
-header nav {
-  padding-right: 40px;
-}
 
 nav span {
   display: inline-block;
   padding: 20px 10px;
 }
+
+nav a:hover {
+transition: background-color .1s ease-in;
+}
+
+nav a:hover {
+  background-color: #A6B7D1;
+  color: #FFFFFF;
+  font-weight: bold;
+  background: linear-gradient(#A6B7D1);
+}
+
+/* header ends */
+
+/* content section starts*/
 
 body {
   margin: auto;
@@ -45,17 +67,30 @@ body {
 
 .content {
   display: flex;
-  width: 1232px;
   margin: 0 auto 78px auto;
   padding-top: 116px;
 }
 
+@media only screen and (max-width: 480px) {
+  .logo {
+    display: none
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  }
+}
 
 /* First Column */
 
+
 .column.large {
-  width: 630px;
-  display: flex;
+    width: 100%;
+    display: flex;
 }
 
 .column {
@@ -66,6 +101,7 @@ body {
 
 .stories {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 17px;
 }
@@ -109,26 +145,31 @@ image {
 }
 
 .lead-story .image-content {
-  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-main.png);
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/SHRM%20Newsletter/Resources/Images/career_path_cropped.jpg);
   width: 630px;
   height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 0;
   font-size: 40px;
   text-align: left;
   display: flex;
+  overflow: hidden;
 }
 
 .image-content {
-  color: white;
+  color: #000000;
+  text-shadow: .02px .02px .02px #000;
   font-size: 30px;
-  font-family: Georgia;
+  font-family: Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
   display: flex;
+
 }
 
 .fall-cancelled.image-content {
-  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-2.png);
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/SHRM%20Newsletter/Resources/Images/unplug.jpeg);
   height: 300px;
   margin-top: 15px;
   font-family: Georgia;
@@ -136,6 +177,9 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .column {
@@ -145,7 +189,7 @@ image {
 }
 
 .pop-culture.image-content {
-  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-3.png);
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/SHRM%20Newsletter/Resources/Images/workplace.jpg);
   height: 300px;
   margin-top: 15px;
   font-family: Georgia;
@@ -153,6 +197,9 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /* Second Column */
@@ -162,7 +209,7 @@ image {
 }
 
 .cat-ceo.image-content {
-  background-image: url(file:///C:/Users/Stuar/Documents/Projects/My%20Times/Resources/Images/img-story-1.png);
+  background-image: url(file:///C:/Users/Stuar/Documents/Projects/SHRM%20Newsletter/Resources/Images/mentor.jpg);
   height: 300px;
   margin-top: 15px;
   font-family: Georgia;
@@ -170,6 +217,9 @@ image {
   font-size: 30px;
   color: white;
   text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
   display: flex;
 }
 
@@ -187,7 +237,7 @@ image {
   text-align: center;
 }
 
-.bite {
+.item {
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
@@ -195,6 +245,16 @@ image {
   background-color: WhiteSmoke;
   border-bottom: 1px solid black;
   padding: 11px 20px;
+}
+
+.news-bites a:hover {
+transition: background-color .1s linear;
+}
+
+.news-bites a:hover {
+  background-color: #A6B7D1;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 /* Footer */
@@ -206,7 +266,7 @@ footer {
   flex-direction: column;
   width: 100%;
   height: 325px;
-  background-color: MediumAquamarine;
+  background-color: #A6B7D1;
   margin: auto;
   font-family: Verdana;
   font-size: 12px;
@@ -225,4 +285,8 @@ footer .title {
 footer nav {
   display: inline-block;
   padding-left: 25px;
+}
+
+footer a {
+  font-size: 1.02rem;
 }
